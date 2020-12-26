@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/pulse-landing-page.png") top center;
+  background: url("../img/landingnew.png") top center;
   background-size: cover;
   position: top;
   margin-bottom: -90px;
@@ -353,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
     #hero {
       width: 100%;
       height: 100vh;
-      background: url("../img/pulse-landing-page-mobile.png") top center;
+      background: url("../img/landingnew-mobile.png") top center;
       background-size: cover;
       position: top;
       margin-bottom: -90px;
