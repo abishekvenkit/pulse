@@ -43,19 +43,17 @@
 
       <div class="logo mr-auto">
         <h1 class="text-light"><a href="index.html"><span>Pulse 2021</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <!--
-            <li><a href="#services">Events</a></li>
-          <li><a href="#portfolio">Competitions</a></li>
-          <li><a href="#team">Pulse 2020</a></li>
-          -->
+          <li class="active"><a href="#top_page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#footer">Contact Us</a></li>
           <li><a href="https://avenkit2.typeform.com/to/BFRZ5Dmi" target="_blank">Register</a></li>
+          <li><a href="https://drive.google.com/file/d/1WRNkWmeiSC4DBskfqtnPlZRsDpuYvXBk/view?usp=sharing" target="_blank">Corporate</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -74,35 +72,76 @@
             </ul>
           </li> -->
           <!--<li><a href="#contact">Contact Us</a></li>-->
-
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <!-- <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a> -->
+  <!-- ======= top_page Section ======= -->
+  <section id="top_page">
+    <div class="top_page-container" data-aos="fade-up">
+
+      <div class="top_page-item filter-tt">
+        <div class="top_page-wrap">
+          <img src="assets/img/pulse-logo-full.png" class="img-fluid" alt="">
+        </div>
+      </div>
 
       <!-- Countdown Timer -->
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-        p {
+        .imageholder{
+          position: relative;
+          width: 200px;
+          height: 200px;
+          overflow: hidden;
+        }
+        .countdown p {
           text-align: center;
           font-size: 60px;
-          margin-top: 400px;
           position: relative;
           font-family: "Open Sans", sans-serif;
           color: white;
+          animation: fadeIn ease 2s;
+        }
+        @keyframes fadeIn {
+        0% {opacity:0;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+        }
+
+        @-moz-keyframes fadeIn {
+          0% {opacity:0;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+        }
+
+        @-webkit-keyframes fadeIn {
+          0% {opacity:0;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+        }
+
+        @-o-keyframes fadeIn {
+          0% {opacity:0;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+        }
+
+        @-ms-keyframes fadeIn {
+          0% {opacity:0;}
+        50% {opacity:0;}
+        100% {opacity:1;}
         }
         </style>
-        </head>
-        <body>
-        
-        <p id="demo"></p>
+      </head>
+      <body>
+        <div class=countdown>
+          <p id="demo"></p>
+        </div>
+        <!-- <p id="demo"></p> -->
         
         <script>
         // Set the date we're counting down to
@@ -124,8 +163,26 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
           // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
+          days_before_str = "" 
+          if (days <= 9){
+            days_before_str =  "0"
+          }
+          hr_before_str = "" 
+          if (hours <= 9){
+            hr_before_str =  "0"
+          }
+          min_before_str = "" 
+          if (minutes <= 9){
+            min_before_str =  "0"
+          }
+          sec_before_str = "" 
+          if (seconds <= 9){
+            sec_before_str =  "0"
+          }
+          document.getElementById("demo").innerHTML = days_before_str + days + ":" 
+          + hr_before_str + hours + ":"
+          + min_before_str + minutes + ":" 
+          + sec_before_str + seconds;
             
           // If the count down is over, write some text 
           if (distance < 0) {
@@ -137,113 +194,268 @@
         </body>
 
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End top_page -->
 
   <main id="main">
-<!-- 
-      <section id="services" class="services">
-        <div class="container">
-        </div>
-      </section>
-      
-      <section id="counts" class="counts  section-bg">
-        <div class="container">
-        </div>
-      </div>
-    </section>
-    
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-      </div>
-    </section>
-    
-    <section id="portfolio" class="portfolio">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="portfolio">
       <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>About Pulse</h2>
+          <p>
+            On behalf of the Pulse 2021 Discoveries Team, we invite you to join our tenth annual conference
+            to celebrate the latest innovation within Electrical and Computer Engineering and Computer
+            Science at the University of Illinois at Urbana Champaign. 
+          </p>
+          <br>
+          <p>
+            Our annual conference brings together hundreds of students and several corporate sponsors for
+            a week-long celebration of technology through workshops, tech talks from cutting-edge
+            technologists, a hardware competition, a software competition and a day-long celebration of
+            women in technology.
+          </p>
+          <br>
+          <p>
+            Below are some highlights from previous conferences. This year, Pulse will be completely virtual,
+            allowing students to connect with each other and industry leaders via Zoom.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-tt">Tech Talks</li>
+              <li data-filter=".filter-comp">Competitions</li>
+              <li data-filter=".filter-wit">Women In Tech</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-tt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/about-images/ti_talk.JPG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                  <i class="bx">
+                  </i> 
+                  <div class="overlay_text">
+                    For the Pulse 2019 keynote address, we had the pleasure of hosting the CEO of Texas Instruments, Rich
+                    Templeton! Rich talked about the future of semiconductor technologies, explaining the biggest challenges
+                    facing the new era of chip design.
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-wit">
+            <div class="portfolio-wrap">
+              <img src="assets/img/about-images/wit_microsoft.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-wit">
+            <div class="portfolio-wrap">
+              <img src="assets/img/about-images/wit_round_tables.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-comp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/about-images/sw_comp.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-comp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/about-images/hw_comp.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-tt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/about-images/keynote_2018.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </section>
-    
-    <section id="testimonials" class="testimonials section-bg">
+    </section><!-- End About Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="team">
       <div class="container">
-      </div>
-    </section>
-    
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Events</h2>
+          <div class="section-title-team">
+            <p>Coming Soon!</p>
+          </div>
+        </div>
+
+    </div>
+    </section><!-- End Event Section -->
+
+    <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Our Team</h2>
+          <div class="section-title-team">
+            <p>Meet the executive board that makes Pulse possible!</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/kelly.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kelly Dunleavy</h4>
+                <span>Co-Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="assets/img/team/fawaz.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Fawaz Tirmizi</h4>
+                <span>Co-Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/ribhav.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ribhav Jain</h4>
+                <span>Marketing Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/rishab.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rishab Sriramoju</h4>
+                <span>Corporate & Networking <br /> Co-Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/tejas.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Tejas Satpalkar</h4>
+                <span>Corporate & Networking <br /> Co-Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/nora.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nora Dunleavy</h4>
+                <span>Media & Design Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/savera.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Savera Zulfiqar</h4>
+                <span>Women In Tech Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/abhi.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Abhi Kamboj</h4>
+                <span>Competitions Co-Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/nikhil.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nikhil Nakka</h4>
+                <span>Competitions Co-Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/rohan.JPG" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rohan Sreerama</h4>
+                <span>Secretary & Treasurer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/abishek.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Abishek Venkit</h4>
+                <span>Website Director</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-    </section>
-    
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-      </div>
-    </section>
-  -->
-  </main>
+    </section><!-- End Team Section -->
+
+</main><!-- End #main -->
+
 
   <!-- ======= Footer ======= -->
-
-  <!--
+  
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-12 col-md-6">
             <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-              <h3>Squadfree</h3>
-              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
+              <h3>Contact Us</h3>
+              <p class="pb-3"><em>Feel free to contact us with questions about the conference or sponorship!</em></p>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Email:</strong> pulse.illinois@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/ECEPulse" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/pulse.illinois?igshid=1gupfor8z0zkj" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/pulseuiuc/about/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
         </div>
       </div>
     </div>
-
   </footer>
--->
+
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
