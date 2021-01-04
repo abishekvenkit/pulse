@@ -555,7 +555,7 @@ section {
 }
 
 .section-title p {
-  text-align: left;
+  text-align: middle;
   margin-bottom: 0;
   color: #000000;
   font-size: 18px;
@@ -939,7 +939,7 @@ section {
   left: 0;
   right: 0;
   top: 0;
-  bottom: -360px;
+  bottom: -400px;
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
