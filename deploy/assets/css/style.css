@@ -11,13 +11,15 @@
 body {
   font-family: Neometric-Regular;
   color: #444444;
-  background: url('../img/pulse-clouds.png'), url('../img/pulse-background.png') ghostwhite no-repeat center center fixed;
+  background: url('../img/website-questionare-landscape.png'), url('../img/pulse-background.png') ghostwhite center center fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-attachment: fixed; */
    -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; 
   -ms-background-size: cover;
-  background-size: cover;
+  background-size: 100% 31%, cover;
 }
 
 @font-face {
@@ -92,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 15px 0;
+  padding: 10px 0;
   background: #9BCDAB;
 }
 
@@ -101,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: #9BCDAB;
+  background: #092d31;
   padding: 0;
 }
 
@@ -117,6 +119,10 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #092d31;
   text-decoration: none;
+}
+
+#header.header-scrolled .logo h1 a {
+  color: white;
 }
 
 #header .logo img {
